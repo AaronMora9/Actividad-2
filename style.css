@@ -1,9 +1,8 @@
-/* Cambiar el color de fondo de un elemento */
-body {
-    background-color:rgb(220, 214, 228); /* Fondo azul claro */
-  }
 
-  /* Cambiar el color del texto */
+body {
+    background-color:rgb(220, 214, 228);
+  }
+  
 p {
-    color: rgb(58, 101, 241); /* Texto color verde oscuro */
+    color: rgb(58, 101, 241); 
   }
