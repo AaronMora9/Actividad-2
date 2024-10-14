@@ -11,15 +11,42 @@
     <header> <h1>El Guepardo</h1> </header>
         <hr style="border: none; height: 5px; background-color: rgb(253, 120, 12); border-radius: 5px;">
         <main>
-        <form action="">
-            <fieldset>
-                <p> <b style="font-size: 23px;">Llenar estos dos campos con fines investigativos</b> </p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-                <label for="edad">Edad:</label>
-                <input type="number" name="edad" id="edad">
-            </fieldset>
+        <form action="/enviar-datos" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <input type="submit" value="Enviar">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Enviar">
+            <p>Género:</p>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label>
+            <input type="submit" value="Enviar">    
         </form>
+        <form action="/enviar-comentario" method="POST">
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" maxlength="200" placeholder="Escribe tu comentario aquí..." required></textarea>
+            <p>Máximo de 200 caracteres.</p>
+            <input type="submit" value="Enviar">
+        </form>
+        
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <hr style="border: none; height: 5px; background-color: rgb(253, 120, 12); border-radius: 5px;">
     <main> 
     <nav>
